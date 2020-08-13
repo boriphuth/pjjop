@@ -1,4 +1,5 @@
 ## Dockerfile
+```
 FROM กำหนด Base image
 LABEL ใช้กำหนด Metadata เช่น ชื่อ Version หรือเจ้าของ Image
 ENV กำหนด Environment variable ภายใน Container
@@ -11,6 +12,7 @@ ARG กำหนด Variable ขณะสร้าง Image
 ENTRYPOINT สำหรับรันคำสั่งที่ต้องการขณะรัน Container
 EXPOSE กำหนด Port ที่เปิดให้ Container อื่นติดต่อเข้ามา
 VOLUME สร้าง Folder เก็บข้อมูลแบบถาวรให้ Container
+```
 
 ```
 RUN apt-get update && apt-get install my_package
