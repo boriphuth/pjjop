@@ -39,4 +39,5 @@ http://cpsudevops.com:800
 docker-compose build
 docker-compose up -d
 http://cpsudevops.com:800
+docker-compose down --rmi all
 ```

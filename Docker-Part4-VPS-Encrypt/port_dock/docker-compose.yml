@@ -1,0 +1,26 @@
+version: "2"
+
+services:
+  portainer:
+    image: portainer/portainer
+    restart: always
+    environment:
+      - VIRTUAL_HOST=portainer.cpsudevops.com
+    networks:
+      - webproxy
+      - default
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - portainer_data:/data
+
+networks:
+  default:
+    external:
+      name:
+        web_network
+  webproxy:
+    external:
+      name: webproxy
+
+volumes:
+  portainer_data:

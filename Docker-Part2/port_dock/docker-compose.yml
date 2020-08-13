@@ -12,7 +12,7 @@ services:
       VIRTUAL_HOST: ${DOMAINS}
 
     ports:
-      - "80:9000"
+      - "88:9000"
 volumes: 
   portainer_data:
 
