@@ -65,6 +65,7 @@ docker-compose ps
 ## Email Service
 ```
 cd email_dock
+docker-compose down --rmi all
 docker network create email_network
 docker-compose build
 docker-compose up -d
