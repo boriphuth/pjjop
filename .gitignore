@@ -1,0 +1,6 @@
+*.env*
+**/backup/*
+**/data/*
+**/certs/*
+**/conf.d/*
+**/vhost.d/*
