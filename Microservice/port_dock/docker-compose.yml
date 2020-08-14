@@ -5,7 +5,7 @@ services:
     image: portainer/portainer
     restart: always
     environment:
-      - VIRTUAL_HOST=portainer.boriphuth.thddns.net
+      - VIRTUAL_HOST=portainer.ec2-3-8-185-42.eu-west-2.compute.amazonaws.com
     networks:
       - webproxy
       - default

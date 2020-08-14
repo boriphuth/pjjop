@@ -22,6 +22,8 @@ docker-compose ps
 cd port_dock
 docker-compose up -d
 docker-compose ps
+http://portainer.boriphuth.thddns.net
+http://portainer.ec2-3-8-185-42.eu-west-2.compute.amazonaws.com
 ```
 
 ## RabbitMQ
@@ -42,6 +44,7 @@ docker-compose ps
 ## Student Service
 ```
 cd student_dock
+docker-compose down --rmi all
 docker network create student_network
 docker network ls
 docker-compose build
@@ -52,6 +55,7 @@ docker-compose ps
 ## Enroll Service
 ```
 cd enroll_dock
+docker-compose down --rmi all
 docker network create enroll_network
 docker-compose build
 docker-compose up -d
@@ -68,4 +72,4 @@ docker-compose ps
 
 ```
 
-http://boriphuth.thddns.net:7001/docs
+http://ec2-3-8-185-42.eu-west-2.compute.amazonaws.com:7001/docs

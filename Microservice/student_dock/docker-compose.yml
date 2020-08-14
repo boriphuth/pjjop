@@ -35,8 +35,8 @@ services:
       - default
 
     environment:
-      VIRTUAL_HOST: student.boriphuth.thddns.net
-      LETSENCRYPT_HOST: student.boriphuth.thddns.net
+      VIRTUAL_HOST: student.ec2-3-8-185-42.eu-west-2.compute.amazonaws.com
+      LETSENCRYPT_HOST: student.ec2-3-8-185-42.eu-west-2.compute.amazonaws.com
     
     expose:
       - "80"

@@ -32,8 +32,8 @@ services:
       - webproxy
       - default
     environment:
-      VIRTUAL_HOST: enroll.boriphuth.thddns.net
-      LETSENCRYPT_HOST: enroll.boriphuth.thddns.net
+      VIRTUAL_HOST: enroll.ec2-3-8-185-42.eu-west-2.compute.amazonaws.com
+      LETSENCRYPT_HOST: enroll.ec2-3-8-185-42.eu-west-2.compute.amazonaws.com
       PMA_ARBITRARY: 1
       PMA_HOST: db
     depends_on:
