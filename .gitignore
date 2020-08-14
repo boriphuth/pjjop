@@ -1,6 +1,9 @@
 *.env*
 **/backup/*
 **/data/*
-**/certs/*
-**/conf.d/*
-**/vhost.d/*
+.DS_Store
+*/*/*/default.crt
+*/*/*/default.key
+*/*/*/dhparam.pem
+*/*/*/default.conf
+*/*/*/default
