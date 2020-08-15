@@ -35,8 +35,8 @@ services:
       - default
 
     environment:
-      VIRTUAL_HOST: student.ec2-3-8-185-42.eu-west-2.compute.amazonaws.com
-      LETSENCRYPT_HOST: student.ec2-3-8-185-42.eu-west-2.compute.amazonaws.com
+      VIRTUAL_HOST: student.boriphuth.net
+      LETSENCRYPT_HOST: student.boriphuth.net
       LETSENCRYPT_EMAIL: boriphuth.sa@gmail.com
     
     expose:

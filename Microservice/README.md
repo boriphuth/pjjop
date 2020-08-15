@@ -16,8 +16,9 @@ docker network create nginx-proxy
 docker-compose up -d
 docker-compose ps
 
-docker network create nginx-web
+docker network create web_network
 ```
+127.0.0.1	portainer.ec2-3-8-185-42.eu-west-2.compute.amazonaws.com student.ec2-3-8-185-42.eu-west-2.compute.amazonaws.com enroll.ec2-3-8-185-42.eu-west-2.compute.amazonaws.com
 
 ## portainer
 ```
@@ -25,8 +26,8 @@ cd port_dock
 docker-compose down --rmi all
 docker-compose up -d
 docker-compose ps
-http://boriphuth.thddns.net
-https://portainer.odocker.com
+http://portainer.ec2-3-8-185-42.eu-west-2.compute.amazonaws.com
+https://portainer.ec2-3-8-185-42.eu-west-2.compute.amazonaws.com
 ```
 
 ## RabbitMQ
