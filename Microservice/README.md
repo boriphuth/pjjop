@@ -58,6 +58,7 @@ https://student.boriphuth.net
 ## Enroll Service
 ```
 cd enroll_dock
+mv .env.sample .env and edit
 docker-compose down --rmi all
 docker network create enroll_network
 docker-compose build --pull
