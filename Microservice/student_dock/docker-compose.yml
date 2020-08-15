@@ -29,16 +29,13 @@ services:
     container_name: student_phpmyadmin
     image: phpmyadmin/phpmyadmin
     restart: always
-
     networks:
       - webproxy
       - default
-
     environment:
-      VIRTUAL_HOST: student.boriphuth.net
-      LETSENCRYPT_HOST: student.boriphuth.net
-      LETSENCRYPT_EMAIL: boriphuth.sa@boriphuth.net
-    
+      - VIRTUAL_HOST=student.boriphuth.net
+      - LETSENCRYPT_HOST=student.boriphuth.net
+      - LETSENCRYPT_EMAIL=boriphuth.sa@boriphuth.net
     expose:
       - "80"
       

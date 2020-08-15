@@ -33,9 +33,9 @@ services:
       - webproxy
       - default
     environment:
-      VIRTUAL_HOST: enroll.boriphuth.net
-      LETSENCRYPT_HOST: enroll.boriphuth.net
-      LETSENCRYPT_EMAIL: boriphuth.sa@boriphuth.net
+      - VIRTUAL_HOST=enroll.boriphuth.net
+      - LETSENCRYPT_HOST=enroll.boriphuth.net
+      - LETSENCRYPT_EMAIL=boriphuth.sa@boriphuth.net
     depends_on:
       - db
     expose:
