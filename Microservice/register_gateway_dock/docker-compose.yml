@@ -4,6 +4,7 @@ services:
   register:
     container_name: register_gateway
     build: python/
+    image: boriphuth/register_gateway
     restart: always
     ports:
       - "7001:80"  

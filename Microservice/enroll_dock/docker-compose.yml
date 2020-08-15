@@ -4,6 +4,7 @@ services:
   enroll_rpc:
     container_name: enroll_rpc
     build: python/
+    image: boriphuth/enroll_rpc
     restart: always
     depends_on:
       - db

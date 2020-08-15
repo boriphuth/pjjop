@@ -4,8 +4,8 @@ services:
   student_rpc:
     container_name: student_rpc
     build: python/
+    image: boriphuth/student_rpc
     restart: always
-    
     depends_on:
       - db
     networks:

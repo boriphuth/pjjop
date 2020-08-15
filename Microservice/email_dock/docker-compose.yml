@@ -4,6 +4,7 @@ services:
   email_rpc:
     container_name: email_rpc
     build: python/
+    image: boriphuth/email_rpc
     restart: always
 
     networks:

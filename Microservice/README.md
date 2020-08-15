@@ -41,6 +41,7 @@ cd register_gateway_dock
 docker-compose build
 docker-compose up -d
 docker-compose ps
+http://boriphuth.net:7001/docs
 ```
 ## Student Service
 ```
@@ -71,10 +72,7 @@ docker network create email_network
 docker-compose build
 docker-compose up -d
 docker-compose ps
-
 ```
-
-http://boriphuth.net:7001/docs
 
 
 docker run -d -e VIRTUAL_HOST=portainer.boriphuth.net \
@@ -88,3 +86,10 @@ docker run -d -e VIRTUAL_HOST=portainer.boriphuth.net \
               --network=webproxy \
               --name my_app \
               httpd:alpine
+```            
+docker login
+docker-compose build --pull
+docker-compose push
+  # and optionally:
+$ docker logout
+```
