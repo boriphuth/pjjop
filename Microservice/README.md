@@ -38,10 +38,11 @@ docker-compose ps
 ## Register Gateway
 ```
 cd register_gateway_dock
+docker-compose down --rmi all
 docker-compose build --pull
 docker-compose up -d
 docker-compose ps
-http://boriphuth.net:7001/docs
+https://register.gateway.boriphuth.net/docs
 ```
 ## Student Service
 ```
@@ -76,6 +77,8 @@ docker-compose build --pull
 docker-compose up -d
 docker-compose ps
 ```
+https://register.gateway.boriphuth.net/docs
+
 http://boriphuth.net:7001/docs#
 https://boriphuth.net:7001/docs#
 
