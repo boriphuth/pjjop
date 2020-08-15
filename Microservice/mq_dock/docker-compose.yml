@@ -1,10 +1,37 @@
-version: "2"
+version: "3"
 services:
   rabbitmq:
-    image: "rabbitmq:management"
-    container_name: rabbitmq
-    restart: always
-      
+    image: lucifer8591/rabbitmq-server:3.7.17
+    hostname: rabbitmq
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    environment:
+      - RABBITMQ_DEFAULT_USER=${RABBITMQ_DEFAULT_USER:-admin}
+      - RABBITMQ_DEFAULT_PASS=${RABBITMQ_DEFAULT_PASS:-admin}
+  rabbit2:
+    image: lucifer8591/rabbitmq-server:3.7.17
+    hostname: rabbit2
+    links:
+      - rabbitmq
+    environment:
+      - CLUSTERED=true
+      - CLUSTER_WITH=rabbitmq
+      - RAM_NODE=true
+    ports:
+      - "5673:5672"
+      - "15673:15672"
+  rabbit3:
+    image: lucifer8591/rabbitmq-server:3.7.17
+    hostname: rabbit3
+    links:
+      - rabbitmq
+      - rabbit2
+    environment:
+      - CLUSTERED=true
+      - CLUSTER_WITH=rabbitmq
+    ports:
+      - "5674:5672"
 networks:
   default:
     external:
