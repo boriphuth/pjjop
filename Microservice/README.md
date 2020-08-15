@@ -18,7 +18,7 @@ docker-compose ps
 
 docker network create web_network
 ```
-127.0.0.1	portainer.ec2-3-8-185-42.eu-west-2.compute.amazonaws.com student.ec2-3-8-185-42.eu-west-2.compute.amazonaws.com enroll.ec2-3-8-185-42.eu-west-2.compute.amazonaws.com
+127.0.0.1	portainer.boriphuth.net student.boriphuth.net enroll.boriphuth.net
 
 ## portainer
 ```
@@ -26,8 +26,8 @@ cd port_dock
 docker-compose down --rmi all
 docker-compose up -d
 docker-compose ps
-http://portainer.ec2-3-8-185-42.eu-west-2.compute.amazonaws.com
-https://portainer.ec2-3-8-185-42.eu-west-2.compute.amazonaws.com
+http://portainer.boriphuth.net
+https://portainer.boriphuth.net
 ```
 
 ## RabbitMQ
@@ -77,4 +77,4 @@ docker-compose ps
 
 ```
 
-http://ec2-3-8-185-42.eu-west-2.compute.amazonaws.com:7001/docs
+http://boriphuth.net:7001/docs
