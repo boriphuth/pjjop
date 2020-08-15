@@ -30,6 +30,7 @@ https://portainer.boriphuth.net
 ## RabbitMQ
 ```
 cd mq_dock
+docker-compose down --rmi all
 docker network create microservice_network
 docker-compose up -d
 docker-compose ps
