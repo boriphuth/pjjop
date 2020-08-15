@@ -17,8 +17,6 @@ services:
       - VIRTUAL_HOST=rabbitmq.boriphuth.net
       - LETSENCRYPT_HOST=rabbitmq.boriphuth.net
       - LETSENCRYPT_EMAIL=boriphuth.sa@boriphuth.net
-    expose:
-      - "80"
 networks:
   default:
     external:
