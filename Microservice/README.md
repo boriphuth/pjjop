@@ -15,15 +15,18 @@ cd nginx-proxy
 docker network create nginx-proxy
 docker-compose up -d
 docker-compose ps
+
+docker network create nginx-web
 ```
 
 ## portainer
 ```
 cd port_dock
+docker-compose down --rmi all
 docker-compose up -d
 docker-compose ps
-http://portainer.boriphuth.thddns.net
-http://portainer.ec2-3-8-185-42.eu-west-2.compute.amazonaws.com
+http://boriphuth.thddns.net
+https://portainer.odocker.com
 ```
 
 ## RabbitMQ

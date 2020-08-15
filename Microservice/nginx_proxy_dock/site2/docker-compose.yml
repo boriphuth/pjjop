@@ -1,0 +1,36 @@
+version: "3"
+ 
+services:
+  db_node_domain_2:
+    image: mysql:5.7
+    volumes:
+      - db_data:/var/lib/mysql
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: wordpress
+      MYSQL_USER: wordpress
+      MYSQL_PASSWORD: password
+    container_name: wordpress_db_2
+ 
+  wordpress_2:
+    depends_on:
+      - db_node_domain_2
+    image: wordpress:latest
+    expose:
+      - 80
+    restart: unless-stopped
+    environment:
+      VIRTUAL_HOST: site2.yoursite.tld
+      LETSENCRYPT_HOST: site2.yoursite.com
+      WORDPRESS_DB_HOST: db_node_domain_2:3306
+      WORDPRESS_DB_USER: wordpress
+      WORDPRESS_DB_PASSWORD: password
+    container_name: wordpress_2
+volumes:
+  db_data:
+ 
+networks:
+  default:
+    external:
+      name: webproxy

@@ -1,6 +1,5 @@
-# pjjop
 
-How to Install and Use Docker on Ubuntu 18.04
+## How to Install and Use Docker on Ubuntu 18.04
 ```
 sudo apt update
 sudo apt install apt-transport-https ca-certificates curl gnupg-agent software-properties-common
@@ -13,5 +12,11 @@ sudo apt-mark hold docker-ce
 sudo systemctl status docker
 sudo usermod -aG docker $USER
 docker container run hello-world
+```
 
+## How to Install Git on Ubuntu 18.04
+```
+sudo apt update
+sudo apt install git
+git --version
 ```

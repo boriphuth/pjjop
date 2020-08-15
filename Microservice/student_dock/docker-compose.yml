@@ -35,8 +35,9 @@ services:
       - default
 
     environment:
-      VIRTUAL_HOST: student.ec2-3-8-185-42.eu-west-2.compute.amazonaws.com
-      LETSENCRYPT_HOST: student.ec2-3-8-185-42.eu-west-2.compute.amazonaws.com
+      VIRTUAL_HOST: student.odocker.com
+      LETSENCRYPT_HOST: student.odocker.com
+      LETSENCRYPT_EMAIL: boriphuth.sa@gmail.com
     
     expose:
       - "80"
@@ -50,4 +51,4 @@ networks:
       name: microservice_network
   webproxy:
     external:
-      name: nginx-proxy
+      name: webproxy

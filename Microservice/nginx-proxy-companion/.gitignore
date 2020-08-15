@@ -1,0 +1,10 @@
+data
+.env*
+!.env.sample
+.DS_Store
+*/certs/*
+*/conf.d/*
+*/vhost.d/*
+
+*/*/default.conf
+*/*/*/default

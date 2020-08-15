@@ -5,7 +5,9 @@ services:
     image: portainer/portainer
     restart: always
     environment:
-      - VIRTUAL_HOST=portainer.ec2-3-8-185-42.eu-west-2.compute.amazonaws.com
+      - VIRTUAL_HOST=portainer.thddns.net
+      - LETSENCRYPT_HOST=portainer.thddns.net
+      - LETSENCRYPT_EMAIL=boriphuth.sa@gmail.com
     networks:
       - webproxy
       - default
@@ -20,7 +22,7 @@ networks:
         web_network
   webproxy:
     external:
-      name: nginx-proxy
+      name: webproxy
 
 volumes:
   portainer_data:
