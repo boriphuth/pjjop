@@ -6,9 +6,21 @@ services:
     build: python/
     image: boriphuth/register_gateway
     restart: always
-    ports:
-      - "7001:80"  
+    networks:
+      - webproxy
+      - default
+    environment:
+      - VIRTUAL_HOST=register.gateway.boriphuth.net
+      - LETSENCRYPT_HOST=register.gateway.boriphuth.net
+      - LETSENCRYPT_EMAIL=boriphuth.sa@boriphuth.net
+    expose:
+      - "80"
+    # ports:
+    #   - "7001:80"  
 networks:
   default:
     external:
       name: microservice_network
+  webproxy:
+    external:
+      name: webproxy

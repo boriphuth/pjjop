@@ -76,6 +76,8 @@ docker-compose build --pull
 docker-compose up -d
 docker-compose ps
 ```
+http://boriphuth.net:7001/docs#
+https://boriphuth.net:7001/docs#
 
 
 docker run -d -e VIRTUAL_HOST=portainer.boriphuth.net \
