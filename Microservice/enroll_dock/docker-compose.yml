@@ -32,8 +32,8 @@ services:
       - webproxy
       - default
     environment:
-      VIRTUAL_HOST: enroll.odocker.com
-      LETSENCRYPT_HOST: enroll.odocker.com
+      VIRTUAL_HOST: enroll.ec2-3-8-185-42.eu-west-2.compute.amazonaws.com
+      LETSENCRYPT_HOST: enroll.ec2-3-8-185-42.eu-west-2.compute.amazonaws.com
       LETSENCRYPT_EMAIL: boriphuth.sa@gmail.com
     depends_on:
       - db
