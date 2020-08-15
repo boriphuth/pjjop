@@ -38,7 +38,7 @@ docker-compose ps
 ## Register Gateway
 ```
 cd register_gateway_dock
-docker-compose build
+docker-compose build --pull
 docker-compose up -d
 docker-compose ps
 http://boriphuth.net:7001/docs
@@ -49,9 +49,10 @@ cd student_dock
 docker-compose down --rmi all
 docker network create student_network
 docker network ls
-docker-compose build
+docker-compose build --pull
 docker-compose up -d
 docker-compose ps
+https://student.boriphuth.net
 ```
 
 ## Enroll Service
@@ -59,10 +60,10 @@ docker-compose ps
 cd enroll_dock
 docker-compose down --rmi all
 docker network create enroll_network
-docker-compose build
+docker-compose build --pull
 docker-compose up -d
 docker-compose ps
-https://student.boriphuth.net
+https://enroll.boriphuth.net
 ```
 
 ## Email Service
@@ -70,7 +71,7 @@ https://student.boriphuth.net
 cd email_dock
 docker-compose down --rmi all
 docker network create email_network
-docker-compose build
+docker-compose build --pull
 docker-compose up -d
 docker-compose ps
 ```
