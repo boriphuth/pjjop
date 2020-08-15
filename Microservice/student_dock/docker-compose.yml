@@ -37,7 +37,7 @@ services:
     environment:
       VIRTUAL_HOST: student.boriphuth.net
       LETSENCRYPT_HOST: student.boriphuth.net
-      LETSENCRYPT_EMAIL: boriphuth.sa@gmail.com
+      LETSENCRYPT_EMAIL: boriphuth.sa@boriphuth.net
     
     expose:
       - "80"

@@ -78,3 +78,16 @@ docker-compose ps
 ```
 
 http://boriphuth.net:7001/docs
+
+
+docker run -d -e VIRTUAL_HOST=portainer.boriphuth.net \
+              --network=webproxy \
+              --name my_app \
+              httpd:alpine
+
+docker run -d -e VIRTUAL_HOST=portainer.boriphuth.net \
+              -e LETSENCRYPT_HOST=portainer.boriphuth.net \
+              -e LETSENCRYPT_EMAIL=boriphuth@boriphuth.net \
+              --network=webproxy \
+              --name my_app \
+              httpd:alpine

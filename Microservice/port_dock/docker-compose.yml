@@ -5,8 +5,8 @@ services:
     image: portainer/portainer
     restart: always
     environment:
-      - VIRTUAL_HOST=portainer.boriphuth.net
-      - LETSENCRYPT_HOST=portainer.boriphuth.net
+      - VIRTUAL_HOST=boriphuth.net
+      - LETSENCRYPT_HOST=boriphuth.net
       - LETSENCRYPT_EMAIL=boriphuth.sa@boriphuth.net
     networks:
       - webproxy
