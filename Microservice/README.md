@@ -34,6 +34,7 @@ docker-compose down --rmi all
 docker network create microservice_network
 docker-compose up -d
 docker-compose ps
+https://rabbitmq.boriphuth.net
 ```
 
 ## Register Gateway
