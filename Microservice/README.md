@@ -11,14 +11,11 @@ docker-compose down --rmi all
 
 ## nginx
 ```
-cd nginx-proxy
-docker network create nginx-proxy
-docker-compose up -d
+cd nginx-proxy-companion
+docker network create webproxy
+./start.sh
 docker-compose ps
-
-docker network create web_network
 ```
-127.0.0.1	portainer.boriphuth.net student.boriphuth.net enroll.boriphuth.net
 
 ## portainer
 ```
