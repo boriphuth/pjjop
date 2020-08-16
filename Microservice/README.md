@@ -51,7 +51,6 @@ https://register.gateway.boriphuth.net/docs
 cd student_dock
 docker-compose down --rmi all
 docker network create student_network
-docker network ls
 docker-compose build --pull
 docker-compose up -d
 docker-compose ps
@@ -61,7 +60,6 @@ https://student.boriphuth.net
 ## Enroll Service
 ```
 cd enroll_dock
-mv .env.sample .env and edit
 docker-compose down --rmi all
 docker network create enroll_network
 docker-compose build --pull
@@ -73,6 +71,7 @@ https://enroll.boriphuth.net
 ## Email Service
 ```
 cd email_dock
+mv .env.sample .env and edit
 docker-compose down --rmi all
 docker network create email_network
 docker-compose build --pull

@@ -20,6 +20,9 @@ docker-compose down --rmi all
 docker-compose up -d
 docker-compose ps
 https://konga.boriphuth.net
+Name:Devops
+Kong Admin URL:http://kong:8001
+
 https://service.boriphuth.net/register/
 ```
 
