@@ -17,6 +17,7 @@ Plugin คือ ตัวที่ทำให้ Kong สามารถทำ
 cd kong_dock
 docker network create kong_network
 docker-compose down --rmi all
+docker-compose up -d
 docker-compose ps
 https://konga.boriphuth.net
 https://service.boriphuth.net/register/

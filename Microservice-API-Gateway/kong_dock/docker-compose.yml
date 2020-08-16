@@ -68,9 +68,9 @@ services:
       DB_DATABASE: konga
       NODE_ENV: development
 
-      VIRTUAL_HOST: konga.labxx.cpsudevops.com
+      VIRTUAL_HOST: konga.boriphuth.net
       VIRTUAL_PORT: 1337
-      LETSENCRYPT_HOST: konga.labxx.cpsudevops.com
+      LETSENCRYPT_HOST: konga.boriphuth.net
 
     expose:
     - "1337"
